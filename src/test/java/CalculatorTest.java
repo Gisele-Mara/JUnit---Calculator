@@ -8,26 +8,41 @@ public class CalculatorTest {
 
 
 @Test
-public void shouldReturnSum() {
+public void testSum() {
     assertEquals(2, Calculator.sum(1, 1));
 
 }
+@Test
+public void testSubtract() {
+    assertEquals(9, Calculator.subtract(10, 1));
+
+}
+@Test
+public void testDivide() {
+    assertEquals(1, Calculator.divide(1, 1));
+
+}
+@Test
+public void testMultiply() {
+    assertEquals(2, Calculator.multiply(2, 1));
+
+}
 
 @Test
-public void shouldReturnSquareRoot(){
+public void testSquareRoot(){
     assertEquals(8, Calculator.squaredRoot(64));
 
 }
 @Test
-public void shouldReturnTripleRoot(){
+public void testTripleRoot(){
     assertEquals(8, Calculator.squaredRoot(64));
 }
 @Test
-public void shouldReturnPow(){
+public void testExponetial(){
     assertEquals(8, Calculator.exponential(2,3));
 }
 @Test
-public void shouldReturnPolynialmsImage(){
+public void testPolynialmsImage(){
 
     assertEquals(-3, Calculator.polynomialsImage(0,2,-3));
     assertEquals(3, Calculator.polynomialsImage(0,2,3));
